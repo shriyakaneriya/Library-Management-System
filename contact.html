@@ -1,0 +1,62 @@
+<html>
+<head>
+<link rel="shortcut icon" href="images/icon.ico" />
+<title>BOOKSHELF</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script>
+function ValidateEmail(inputText)  
+{  
+var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;  
+if(inputText.value.match(mailformat))  
+{   
+return true;  
+}  
+else  
+{  
+alert("You have entered an invalid email address!");    
+return false;  
+}  
+}  
+</script>
+</head>
+<body>
+<div class = "header">
+<ul>
+  <li><a href="home.html">HOME</a></li>
+  <li><a href="home.html#catalog">CATALOG</a></li>
+  <li><a href="contact.html">CONTACT</a></li>
+  <li class = "special"><a href="about.html">BOOKSHELF</a></li>
+</ul>
+</div>
+<div class = "headersearch" id="secbg">
+<div class = "headerasearch">
+<p class = "header1">CONTACT US</p>
+<p class = "header2">HAPPY TO HAVE YOU FIND YOUR FIRST BOOK</p>
+</div>
+</div>
+<section>
+<div class="contact1">
+<div class="contact3"><img class="contact3" src="images/contactimage3.jpg"></div>
+<div class = "contact2">
+<p class="tg">LET'S WORK TOGETHER!</p>
+<form name="form1" >
+<input type="text" name="firstname" placeholder="Your Name">
+<input type="text" name="firstnamee" placeholder="Your Email">
+<input type="text" name="firstname" placeholder="Message">
+<input type="submit" value="Send a Message" onclick="ValidateEmail(document.form1.firstnamee)">
+</form>
+</div>
+</div>
+</section>
+<footer id="another">
+  <ul class="social-icon wow fadeInUp"  data-wow-delay="0.6s">
+		<li><a href="#" class="fa fa-facebook"></a></li>
+		<li><a href="#" class="fa fa-twitter"></a></li>
+		<li><a href="#" class="fa fa-dribbble"></a></li>
+		<li><a href="#" class="fa fa-behance"></a></li>
+		<li><a href="#" class="fa fa-google-plus"></a></li>
+	</ul>
+</footer>
+</body>
+</html>

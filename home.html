@@ -1,0 +1,277 @@
+<html>
+<head>
+<link rel="shortcut icon" href="images/icon.ico" />
+<title>BOOKSHELF</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script>
+
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+function phone()
+{
+var d = new Date();
+var t = d.getHours();
+
+var str = "";
+if(t>=0 && t<=12)
+str="Good Morning "
+else if(t>12 && t<=17)
+str="Good Afternoon "
+else
+str="Good Evening "
+document.getElementById("time").innerHTML = str;
+}
+</script>
+</head>
+<body onload="phone();">
+<div class = "header">
+<ul>
+  <li><a href="home.html">HOME</a></li>
+  <li><a href="#catalog">CATALOG</a></li>
+  <li><a href="contact.html">CONTACT</a></li>
+  <li class = "special"><a href="about.html">BOOKSHELF</a></li>
+</ul>
+</div>
+<div class = "headersearch" id = "mainbg">
+<div class = "headerasearch">
+<p class = "header1">WELCOME TO BOOKSHELF</p>
+<p class = "header2" id="time"></p>
+</div>
+</div>
+<section>
+<div>
+<div class="tab" id="catalog">
+  <button class="tablinks" onclick="openCity(event, 'S')">SCIENCE AND TECHNOLOGY</button>
+  <button class="tablinks" onclick="openCity(event, 'H')">FOLKLORE STORIES</button>
+  <button class="tablinks" onclick="openCity(event, 'A')">ASTROLOGY AND PHILOSOPHY</button>
+</div>
+
+<div id="S" class="tabcontent">
+  <div class="container">
+  <img class="book" alt="science book 1" src="images/portfolio-img1.jpg">
+    <div class="middle">
+      <div class="text">BOOK 1</div>
+	  <div class="texta">Author 1</div>
+    </div>
+	<div class="download">
+	  <div class="textd"><a href="#">Download</a></div>
+	</div>
+  </div>
+  
+  <div class="container">
+  <img class="book" alt="science book 2" src="images/portfolio-img2.jpg">
+    <div class="middle">
+      <div class="text">BOOK 2</div>
+	  <div class="texta">Author 2</div>
+    </div> 
+	<div class="download">
+	  <div class="textd"><a href="#">Download</a></div>
+	</div>
+  </div>
+  
+  <div class="container">
+  <img class="book" alt="science book 3" src="images/portfolio-img3.jpg">
+    <div class="middle">
+      <div class="text">BOOK 3</div>
+	  <div class="texta">Author 3</div>
+    </div>
+	<div class="download">
+	  <div class="textd"><a href="#">Download</a></div>
+	</div>
+  </div>
+  
+  <div class="container">
+  <img class="book" alt="science book 4" src="images/portfolio-img4.jpg">
+    <div class="middle">
+      <div class="text">BOOK 4</div>
+	  <div class="texta">Author 4</div>
+    </div>
+	<div class="download">
+	  <div class="textd"><a href="#">Download</a></div>
+	</div>
+  </div>
+
+  <div class="container">
+  <img class="book" alt="science book 5" src="images/portfolio-img5.jpg">
+    <div class="middle">
+      <div class="text">BOOK 5</div>
+	  <div class="texta">Author 5</div>
+    </div>
+	<div class="download">
+	  <div class="textd"><a href="#">Download</a></div>
+	</div>
+  </div>
+  
+  <div class="container">
+  <img class="book" alt="science book 6" src="images/portfolio-img6.jpg">
+    <div class="middle">
+      <div class="text">BOOK 6</div>
+	  <div class="texta">Author 6</div>
+    </div>
+	<div class="download">
+	  <div class="textd"><a href="#">Download</a></div>
+	</div>
+  </div>
+</div>
+
+<div id="H" class="tabcontent">
+  <div class="container">
+  <img class="book" alt="folklore book 1" src="images/h11.jpg">
+    <div class="middle">
+      <div class="text">BOOK 7</div>
+	  <div class="texta">Author 7</div>
+    </div>
+	<div class="download">
+	  <div class="textd"><a href="#">Download</a></div>
+	</div>
+  </div>
+  
+  <div class="container">
+  <img class="book" alt="folklore book 2" src="images/h12.jpg">
+    <div class="middle">
+      <div class="text">BOOK 8</div>
+	  <div class="texta">Author 8</div>
+    </div>
+	<div class="download">
+	  <div class="textd"><a href="#">Download</a></div>
+	</div>
+  </div>
+  
+  <div class="container">
+  <img class="book" alt="folklore book 3" src="images/h15.jpg">
+    <div class="middle">
+      <div class="text">BOOK 9</div>
+	  <div class="texta">Author 9</div>
+    </div>
+	<div class="download">
+	  <div class="textd"><a href="#">Download</a></div>
+	</div>
+  </div>
+  
+  <div class="container">
+  <img class="book" alt="folklore book 4" src="images/h14.jpg">
+    <div class="middle">
+      <div class="text">BOOK 10</div>
+	  <div class="texta">Author 10</div>
+    </div>
+	<div class="download">
+	  <div class="textd"><a href="#">Download</a></div>
+	</div>
+  </div>
+  
+  <div class="container">
+  <img class="book" alt="folklore book 5" src="images/h13.jpg">
+    <div class="middle">
+      <div class="text">BOOK 11</div>
+	  <div class="texta">Author 11</div>
+    </div>
+	<div class="download">
+	  <div class="textd"><a href="#">Download</a></div>
+	</div>
+  </div>
+  
+  <div class="container">
+  <img class="book" alt="folklore book 6" src="images/h16.jpg">
+    <div class="middle">
+      <div class="text">BOOK 12</div>
+	  <div class="texta">Author 12</div>
+    </div>
+	<div class="download">
+	  <div class="textd"><a href="#">Download</a></div>
+	</div>
+  </div>
+</div>
+
+<div id="A" class="tabcontent">
+  <div class="container">
+  <img class="book" alt="astrology book 1" src="images/a1.jpg">
+    <div class="middle">
+      <div class="text">BOOK 13</div>
+	  <div class="texta">Author 13</div>
+    </div>
+	<div class="download">
+	  <div class="textd"><a href="#">Download</a></div>
+	</div>
+  </div>
+  
+  <div class="container">
+  <img class="book" alt="astrology book 2" src="images/a2.jpg">
+    <div class="middle">
+      <div class="text">BOOK 14</div>
+	  <div class="texta">Author 14</div>
+    </div>
+	<div class="download">
+	  <div class="textd"><a href="#">Download</a></div>
+	</div>
+  </div>
+  
+  <div class="container">
+  <img class="book" alt="astrology book 3" src="images/a5.jpg">
+    <div class="middle">
+      <div class="text">BOOK 15</div>
+	  <div class="texta">Author 15</div>
+    </div>
+	<div class="download">
+	  <div class="textd"><a href="#">Download</a></div>
+	</div>
+  </div>
+  
+  <div class="container">
+  <img class="book" alt="astrology book 4" src="images/a4.jpg">
+    <div class="middle">
+      <div class="text">BOOK 16</div>
+	  <div class="texta">Author 16</div>
+    </div>
+	<div class="download">
+	  <div class="textd"><a href="#">Download</a></div>
+	</div>
+  </div>
+  
+  <div class="container">
+  <img class="book" alt="astrology book 5" src="images/a3.jpg">
+    <div class="middle">
+      <div class="text">BOOK 17</div>
+	  <div class="texta">Author 17</div>
+    </div>
+	<div class="download">
+	  <div class="textd"><a href="#">Download</a></div>
+	</div>
+  </div>
+  
+  <div class="container">
+  <img class="book" alt="astrology book 6" src="images/a6.jpg">
+    <div class="middle">
+      <div class="text">BOOK 18</div>
+	  <div class="texta">Author 18</div>
+    </div>
+	<div class="download">
+	  <div class="textd"><a href="#">Download</a></div>
+	</div>
+  </div>
+</div>
+</div>
+</section>  
+<footer id="mfoot">
+  <ul class="social-icon wow fadeInUp"  data-wow-delay="0.6s">
+		<li><a href="#" class="fa fa-facebook"></a></li>
+		<li><a href="#" class="fa fa-twitter"></a></li>
+		<li><a href="#" class="fa fa-dribbble"></a></li>
+		<li><a href="#" class="fa fa-behance"></a></li>
+		<li><a href="#" class="fa fa-google-plus"></a></li>
+	</ul>
+</footer>
+</body>
+</html>
